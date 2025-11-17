@@ -182,7 +182,7 @@
 
                         <div class="mb-3">
                             <label for="location" class="form-label">Google Map URL</label>
-                            <input type="url" class="form-control" id="location" name="location" placeholder="https://maps.google.com/...">
+                            <input type="text" class="form-control" id="location" name="location" placeholder="<iframe src='https://www.google.com/maps/...">
                         </div>
                     </div>
                 </div>

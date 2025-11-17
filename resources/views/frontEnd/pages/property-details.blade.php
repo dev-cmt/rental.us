@@ -20,7 +20,7 @@
                 <div class="col-lg-11 col-md-12">
                     <div class="property_block_wrap style-3">
                         <div class="ft-flex-thumb">
-                            <img src="{{ asset($property->images->where('is_default', true)->first()->image_path) }}" class="img-fluid w-100 rounded mb-2" style="height: 180px; object-fit: cover;" alt="{{ $property->title }}">
+                            <img src="{{ asset($property->images->where('is_default', true)->first()->image_path ?? '') }}" class="img-fluid w-100 rounded mb-2" style="height: 180px; object-fit: cover;" alt="{{ $property->title }}">
                         </div>
 
                         <div class="pbw-flex">
@@ -140,7 +140,12 @@
                         <div id="clSix" class="panel-collapse collapse">
                             <div class="block-body">
                                 <div class="map-container">
-                                    <iframe src="{{ $property->location }}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <style>
+                                        .map-container iframe{
+                                            width: 100%;
+                                        }
+                                    </style>
+                                    {!! $property->location ?? '' !!}
                                 </div>
                             </div>
                         </div>

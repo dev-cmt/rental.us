@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="US">
 <head>
+	@php
+        $settings = \Illuminate\Support\Facades\DB::table('settings')->first() ?? null;
+    @endphp
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 

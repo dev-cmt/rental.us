@@ -35,7 +35,7 @@
                         <span class="label for-rent prt-type me-2">{{$property->property_status}}</span>
                         <span class="label property-type property-cats">{{$property->category->category_name}}</span>
                     </div>
-                    <h4 class="listing-name fw-medium fs-6 mb-0"><a href="single-property-1.html" class="prt-link-detail">{{$property->title}}</a></h4>
+                    <h4 class="listing-name fw-medium fs-6 mb-0"><a href="{{route('page.property-details', $property->slug)}}" class="prt-link-detail">{{$property->title}}</a></h4>
                     <div class="prt-location text-muted-2">
                         <span class="svg-icon svg-icon-2hx">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
