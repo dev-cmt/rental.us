@@ -29,17 +29,17 @@ Route::get('/', [HomeController::class, 'welcome'])->name('/');
  */
 Route::get('comming/soon', [HomeController::class, 'comming_soon'])->name('comming_soon');
 //______________ ABOUT US
-Route::get('page/about-us', [HomeController::class, 'about'])->name('page.about-us');
+Route::get('/about-us', [HomeController::class, 'about'])->name('page.about-us');
 //______________ PROPERTIES
-Route::get('page/properties', [HomeController::class, 'properties'])->name('page.properties');
-Route::get('page/properties-details/{slug}', [HomeController::class, 'propertyDetails'])->name('page.property-details');
+Route::get('/properties', [HomeController::class, 'properties'])->name('page.properties');
+Route::get('/properties-details/{slug}', [HomeController::class, 'propertyDetails'])->name('page.property-details');
 //______________ CONTACT
-Route::get('page/contact', [HomeController::class, 'contact'])->name('page.contact');
-Route::post('page/contact', [HomeController::class, 'contactStore'])->name('page.contact.store');
+Route::get('/contact', [HomeController::class, 'contact'])->name('page.contact');
+Route::post('/contact', [HomeController::class, 'contactStore'])->name('page.contact.store');
 //______________ APPLICATION
-Route::get('page/application-from', [HomeController::class, 'applicationFrom'])->name('page.application-from');
-Route::post('page/application-submit', [HomeController::class, 'applicationSubmit'])->name('page.application.submit');
-Route::get('page/application-success', [HomeController::class, 'applicationSuccess'])->name('page.application.success');
+Route::get('/appointment', [HomeController::class, 'applicationFrom'])->name('page.application-from');
+Route::post('/appointment-submit', [HomeController::class, 'applicationSubmit'])->name('page.application.submit');
+Route::get('/appointment-success', [HomeController::class, 'applicationSuccess'])->name('page.application.success');
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');

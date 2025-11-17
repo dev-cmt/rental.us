@@ -252,6 +252,7 @@
                                     <div class="col-md-4">
                                         <label for="state" class="form-label required-label">State/Province</label>
                                         <select class="form-select select2" name="state" id="state" required>
+                                            <option value="">Please Select</option>
                                             @foreach ($states as $state)
                                                 <option value="{{ $state->name }}">{{ $state->name }}</option>
                                             @endforeach
@@ -269,9 +270,9 @@
                                     <div class="col-md-6">
                                         <label for="country" class="form-label required-label">Country</label>
                                         <select class="form-select select2" name="country" id="country" required>
-                                            <option value="">Select country</option>
-                                            <option value="United States">United States (US)</option>
-                                            {{-- @foreach ($countries as $country)
+                                            <option value="United States" selected>United States (US)</option>
+                                            {{-- <option value="">Select country</option>
+                                            @foreach ($countries as $country)
                                                 <option value="{{ $country->country_name }}">{{ $country->country_name . ' ('. $country->country_code .')' }}</option>
                                             @endforeach --}}
                                         </select>

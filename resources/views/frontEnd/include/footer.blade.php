@@ -151,7 +151,7 @@
             <div class="row align-items-center">
 
                 <div class="col-lg-6 col-md-6">
-                    <p class="mb-0">© 2025 Rental.US Designd By <a href="https://prodevsltd.com/">Pro Devs Ltd.</a> All Rights Reserved</p>
+                    <p class="mb-0">© 2025 {{ config('app.name', 'Laravel') }} Designd By <a href="https://prodevsltd.com/">Pro Devs Ltd.</a> All Rights Reserved</p>
                 </div>
 
                 <div class="col-lg-6 col-md-6 text-right">

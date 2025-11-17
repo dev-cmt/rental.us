@@ -62,7 +62,7 @@
                     <a href="{{ route('admin.application.index') }}"
                         class="side-menu__item {{ Request::is('admin/application*') ? 'active' : '' }}">
                         <i class="bx bx-file side-menu__icon"></i>
-                        <span class="side-menu__label">Applications</span>
+                        <span class="side-menu__label">Appointment</span>
                     </a>
                 </li>
 
@@ -70,8 +70,8 @@
                 <li class="slide">
                     <a href="{{ route('admin.application-success.index') }}"
                         class="side-menu__item {{ Request::is('admin/application-success*') ? 'active' : '' }}">
-                        <i class="bx bx-file side-menu__icon"></i>
-                        <span class="side-menu__label">Applications</span>
+                        <i class='bx bxs-message-check side-menu__icon'></i>
+                        <span class="side-menu__label">Thank You Page</span>
                     </a>
                 </li>
 
